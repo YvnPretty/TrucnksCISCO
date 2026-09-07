@@ -1,0 +1,30 @@
+{
+  "name": "trucnks-cisco",
+  "version": "1.0.0",
+  "description": "Herramienta de gestión y automatización de enlaces troncales 802.1Q y VLANs en Cisco Packet Tracer",
+  "main": "bin/trucnks-cisco.js",
+  "bin": {
+    "trucnks-cisco": "bin/trucnks-cisco.js"
+  },
+  "scripts": {
+    "start": "node bin/trucnks-cisco.js start-bridge",
+    "test": "node bin/trucnks-cisco.js test-trunk",
+    "export": "node bin/trucnks-cisco.js export-demo",
+    "audit": "node bin/trucnks-cisco.js audit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YvnPretty/TrucnksCISCO.git"
+  },
+  "keywords": [
+    "cisco",
+    "packet-tracer",
+    "trunk",
+    "vlan",
+    "802.1q",
+    "automation",
+    "networking"
+  ],
+  "author": "YvnPretty",
+  "license": "MIT"
+}
