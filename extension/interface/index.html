@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>TrucnksCISCO Automation HUD</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="header">
+    <div class="logo-title">
+      <span class="badge">CISCO 802.1Q</span>
+      <h1>TrucnksCISCO</h1>
+    </div>
+    <div class="status-indicator">
+      <span id="status-dot" class="dot disconnected"></span>
+      <span id="status-text">Desconectado</span>
+    </div>
+  </div>
+
+  <div class="metrics">
+    <div class="metric-card">
+      <div class="metric-label">Puerto Bridge</div>
+      <div class="metric-value">7531</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">Comandos Procesados</div>
+      <div id="tool-count" class="metric-value">0</div>
+    </div>
+  </div>
+
+  <div class="quick-actions">
+    <h3>Acciones Rápidas</h3>
+    <button id="btn-reconnect" class="btn">Reconectar Bridge</button>
+    <button id="btn-scan" class="btn btn-secondary">Auditar Topología</button>
+    <button id="btn-clear-log" class="btn btn-ghost">Limpiar Log</button>
+  </div>
+
+  <div class="terminal-container">
+    <div class="terminal-header">
+      <span>Registro de Eventos y Troncales en Vivo</span>
+    </div>
+    <div id="log" class="terminal-body"></div>
+  </div>
+
+  <script src="interface.js"></script>
+</body>
+</html>
